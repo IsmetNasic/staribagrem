@@ -1,0 +1,1 @@
+web: gunicorn staribagrem.wsgi --log-file -
