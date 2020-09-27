@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = bool(os.environ.get("DEBUG", False))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['staribagrem.herokuapp.com']
 
 
 # Application definition
@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-
     'store.apps.StoreConfig',
 ]
 
@@ -121,31 +120,18 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles'))
-
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 MEDIA_URL = '/images/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
-LOGGING = {
-    "version": 1,
-    "disable_existing_loggers": False,
-    "handlers": {"console": {"class": "logging.StreamHandler"}},
-    "loggers": {
-        "": {"handlers": ["console"], "level": "INFO"},
-        "django": {"handlers": ["console"], "level": "INFO"},
-    },
-}
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+#  Add configuration for static files storage using whitenoise
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 #Activate heroku settings for Django
 django_heroku.settings(locals(), logging=False)
