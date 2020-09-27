@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Stari Bagrem</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+<body>
+    <header id="myHeader">
+         <div>
+             <a href="{% url 'index' %}"><img src="/static/images/logo.sb.jpg" id="logoImg"></a>
+        </div>
+        <div class="container">
+        <nav>
+          <ul>
+            <li class="current"><a href="{% url 'index' %}">Početna</a></li>
+            <li><a href="{% url 'meni' %}">Jelovnik</a></li>
+            <li><a href="{% url 'about' %}">Galerija</a></li>
+          </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h6><img src="/images/logo.sb.jpg" style="border-radius: 20px; width:300px;"></h6>
+            <h5 style="color:#EBEBEB;">DOBRO DOŠLI</h5>
+
+<!--            <div><img src="/static/images/logosb.png" style="background:white;"></div>-->
+            <div class="arrow">
+                <a href="#section2">
+                <span></span>
+                <span></span>
+                <span></span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="/images/sat1.png">
+                <h3>Radno Vrijeme</h3>
+                <p><strong>Ponedeljak - Četvrtak:</strong> 09:00 - 23:00</p>
+                <p><strong>Petak - Subota:</strong> 10:00 - 00:00</p>
+                <p><strong>Nedelja:</strong> 10:00 - 23:00</p>
+            </div>
+        <div class="box">
+            <img src="/images/reserved.png">
+            <h3>Rezervacije</h3>
+            <p><strong>Telefon: </strong>066 000 000</p>
+            <p><strong>Email: </strong>stari_bagrem@hotmail.com</p>
+            <p><strong>Aleksandro Žunić</strong></p>
+        </div>
+        <div class="box">
+            <img src="/images/location.png">
+            <h3>Lokacija</h3>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.2672360424413!2d16.807280615548002!3d45.181686379098565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47673b8e588175ad%3A0xa4c575ed3460893e!2sStari%20bagrem!5e0!3m2!1sen!2sba!4v1600606070081!5m2!1sen!2sba" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+        </div>
+        </div>
+    </section>
+
+    <div class="main" id="section2"></div>
+    <footer>
+        <p>2020 STARI BAGREM. ALL RIGHTS RESERVED. DESIGN BY ISMET NASIĆ &copy;</p>
+    </footer>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        } else {
+        header.classList.remove("sticky");
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jelovnik</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+<body>
+    <header id="myHeader">
+        <div>
+            <a href="{% url 'index' %}"><img src="/static/images/logo.sb.jpg" id="logoImg"></a>
+        </div>
+        <div class="container">
+        <nav>
+          <ul>
+            <li><a href="{% url 'index' %}">Početna</a></li>
+            <li class="current"><a href="{% url 'meni' %}">Jelovnik</a></li>
+            <li><a href="{% url 'about' %}">Galerija</a></li>
+          </ul>
+        </nav>
+        </div>
+    </header>
+
+    <div>
+    <h1 class="burger">Hrana</h1>
+    </div>
+
+    <div class="grid-container">
+    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
+    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
+    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
+    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
+    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
+    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
+    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
+    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
+    </div>
+
+    <div style=" display: flex; flex-wrap: wrap; justify-content: center;">
+        <img src="/static/images/3u1.jpg" style="height: 550px;">
+    </div>
+
+    <div>
+    <h1 class="burger">Piće</h1>
+    </div>
+
+    <div class="grid-container">
+    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
+    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
+    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
+    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
+    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
+    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
+    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
+    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
+    </div>
+
+
+
+<footer>
+    <p>2020 STARI BAGREM. ALL RIGHTS RESERVED. DESIGN BY ISMET NASIĆ &copy;</p>
+</footer>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        } else {
+        header.classList.remove("sticky");
+        }
+    }
+</script>
+</body>
+</html>
