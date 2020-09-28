@@ -131,6 +131,18 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+#  Add configuration for static files storage using whitenoise
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {"console": {"class": "logging.StreamHandler"}},
+    "loggers": {
+        "": {"handlers": ["console"], "level": "INFO"},
+        "django": {"handlers": ["console"], "level": "INFO"},
+    },
+}
 
 # Activate Django-Heroku settings except logging
 django_heroku.settings(locals(), logging=False)
