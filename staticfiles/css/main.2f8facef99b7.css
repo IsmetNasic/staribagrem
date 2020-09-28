@@ -42,7 +42,7 @@ body{
 #showcase{
     min-height:1080px;
     width: auto;
-    background: #141414 url('/static/images/sbnoc.jpg') no-repeat fixed center;
+    background: #141414 url("/static/images/sbnoc.a8bd6d6eef8b.jpg") no-repeat fixed center;
     text-align:center;
     color:#ffffff;
 }
