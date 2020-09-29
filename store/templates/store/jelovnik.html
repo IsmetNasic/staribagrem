@@ -2,43 +2,49 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jelovnik</title>
     <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="myHeader">
-        <div>
-            <a href="{% url 'index' %}"><img src="/static/images/logo.sb.jpg" id="logoImg"></a>
+<header id="myHeader">
+    <nav>
+        <div class="logo">
+            <h4>Stari Bagrem</h4>
         </div>
-        <div class="container">
-        <nav>
-          <ul>
+        <ul class="nav-links">
             <li><a href="{% url 'index' %}">Početna</a></li>
-            <li class="current"><a href="{% url 'meni' %}">Jelovnik</a></li>
+            <li><a href="{% url 'meni' %}">Jelovnik</a></li>
             <li><a href="{% url 'about' %}">Galerija</a></li>
-          </ul>
-        </nav>
+        </ul>
+
+        <div class="nav-burger">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-    </header>
+    </nav>
+</header>
+
 
     <div>
     <h1 class="burger">Hrana</h1>
     </div>
 
     <div class="grid-container">
-    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
-    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
-    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
-    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
-    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
-    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
-    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
-    <div class="grid-item"><img src="/static/images/burger.jpg"><h2>Burger 8.0 KM</h2><p>- 100% junetina <br>- 200g čeder sira <br>- paradajz <br>- zelena salata <br>-umak, pomfrit</p></div>
+        <div class="grid-item"><img src="/static/images/burgerwide.png"><h3>Burger 8.0 KM</h3><p>- 100% junetina, 200g čeder sira, paradajz, zelena salata i <br> pomfrit uz naš domaći umak.</p></div>
+        <div class="grid-item"><img src="/static/images/burgerwide.png"><h3>Burger 8.0 KM</h3><p>- 100% junetina, 200g čeder sira, paradajz, zelena salata i <br> pomfrit uz naš domaći umak.</p></div>
+        <div class="grid-item"><img src="/static/images/burgerwide.png"><h3>Burger 8.0 KM</h3><p>- 100% junetina, 200g čeder sira, paradajz, zelena salata i <br> pomfrit uz naš domaći umak.</p></div>
+        <div class="grid-item"><img src="/static/images/burgerwide.png"><h3>Burger 8.0 KM</h3><p>- 100% junetina, 200g čeder sira, paradajz, zelena salata i <br> pomfrit uz naš domaći umak.</p></div>
+        <div class="grid-item"><img src="/static/images/burgerwide.png"><h3>Burger 8.0 KM</h3><p>- 100% junetina, 200g čeder sira, paradajz, zelena salata i <br> pomfrit uz naš domaći umak.</p></div>
+        <div class="grid-item"><img src="/static/images/burgerwide.png"><h3>Burger 8.0 KM</h3><p>- 100% junetina, 200g čeder sira, paradajz, zelena salata i <br> pomfrit uz naš domaći umak.</p></div>
+        <div class="grid-item"><img src="/static/images/burgerwide.png"><h3>Burger 8.0 KM</h3><p>- 100% junetina, 200g čeder sira, paradajz, zelena salata i <br> pomfrit uz naš domaći umak.</p></div>
+        <div class="grid-item"><img src="/static/images/burgerwide.png"><h3>Burger 8.0 KM</h3><p>- 100% junetina, 200g čeder sira, paradajz, zelena salata i <br> pomfrit uz naš domaći umak.</p></div>
     </div>
 
     <div style=" display: flex; flex-wrap: wrap; justify-content: center;">
-        <img src="/static/images/3u1.jpg" style="height: 550px;">
+        <img src="/static/images/3u1.jpg" style="height: 500px;">
     </div>
 
     <div>
@@ -46,14 +52,14 @@
     </div>
 
     <div class="grid-container">
-    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
-    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
-    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
-    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
-    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
-    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
-    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
-    <div class="grid-item"><img src="/static/images/pice.png"><h2>Koktel 5.0 KM</h2><p>- Limun <br>- vodka <br>- liker od breskve <br>- sok od naranče <br>- sok od brusnice</p></div>
+        <div class="grid-item"><img src="/static/images/cocktail.jpg"><h2>Koktel 5.0 KM</h2><p>Limun, vodka, liker od breskve, <br> sok od naranče i sok od brusnice</p></div>
+        <div class="grid-item"><img src="/static/images/cocktail.jpg"><h2>Koktel 5.0 KM</h2><p>Limun, vodka, liker od breskve, <br> sok od naranče i sok od brusnice</p></div>
+        <div class="grid-item"><img src="/static/images/cocktail.jpg"><h2>Koktel 5.0 KM</h2><p>Limun, vodka, liker od breskve, <br> sok od naranče i sok od brusnice</p></div>
+        <div class="grid-item"><img src="/static/images/cocktail.jpg"><h2>Koktel 5.0 KM</h2><p>Limun, vodka, liker od breskve, <br> sok od naranče i sok od brusnice</p></div>
+        <div class="grid-item"><img src="/static/images/cocktail.jpg"><h2>Koktel 5.0 KM</h2><p>Limun, vodka, liker od breskve, <br> sok od naranče i sok od brusnice</p></div>
+        <div class="grid-item"><img src="/static/images/cocktail.jpg"><h2>Koktel 5.0 KM</h2><p>Limun, vodka, liker od breskve, <br> sok od naranče i sok od brusnice</p></div>
+        <div class="grid-item"><img src="/static/images/cocktail.jpg"><h2>Koktel 5.0 KM</h2><p>Limun, vodka, liker od breskve, <br> sok od naranče i sok od brusnice</p></div>
+        <div class="grid-item"><img src="/static/images/cocktail.jpg"><h2>Koktel 5.0 KM</h2><p>Limun, vodka, liker od breskve, <br> sok od naranče i sok od brusnice</p></div>
     </div>
 
 
@@ -63,6 +69,7 @@
 </footer>
 
 <script>
+<!--JS function for sticky header-->
     window.onscroll = function() {myFunction()};
 
     var header = document.getElementById("myHeader");
@@ -76,5 +83,6 @@
         }
     }
 </script>
+<script src="/static/js/navbar.js"></script>
 </body>
 </html>
