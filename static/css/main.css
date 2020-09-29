@@ -30,6 +30,14 @@ body{
 .grid-item img{
     width: 385px;
 }
+
+#jelovnikCover{
+    text-align: center;
+}
+#jelovnikCover img{
+    max-width: 100%;
+    height: auto;
+}
 /* -----------------------------------------Grid system for Galerija---------------------------------------------- */
 
 .grid-picture img{
@@ -195,50 +203,52 @@ html {
 /* --------------------------------------------------Nav Bar------------------------------------------------- */
 nav{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
-    min-height: 8vh;
-    background-color: #0B090A;
+    justify-content: space-between;
+    padding: 10px;
+    width: 75%;
 }
 
-.logo{
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
+.nav-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
 }
 
-.nav-links{
-    display:flex;
-    width: 30%;
-    justify-content: space-around;
-}
-header li{
-    list-style: none;
-}
-
-.nav-links a{
-    color: white;
+.nav-ul a{
+    display: inline-block;
+    color: #EBEBEB;
+    padding: 10px 20px;
     text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
+    text-transform: uppercase;
+    font-size:20px;
 }
 
-.nav-burger{
-    display: none;
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: #EBEBEB;
+    font-size: 30px;
     cursor: pointer;
+    display: none;
+    float: right;
 }
 
-.nav-burger div{
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
+.hamburger:focus{
+    outline: none;
 }
 
-.nav-burger div{
-    color:white;
+header{
+    background-color: #0B090A;
+    border-bottom: white 1px solid;
+}
+
+.active a{
+    color: #9C9698;
+    font-weight: 900;
 }
 
 /* ---------------------------------------------------Logo Image------------------------------------------------- */
@@ -247,6 +257,11 @@ header li{
     width: 180px;
     float:left;
     padding-top: 6px;
+}
+
+.logo{
+    color:#EBEBEB;
+    letter-spacing: 5px;
 }
 
 /*------------------------------ Galerija: modal logic for pictures ---------------------------------------*/
@@ -360,9 +375,6 @@ header li{
 }
 
 @media(max-width: 1200px){
-    header li{
-        padding: 0 10px 0 10px;
-    }
     .grid-item img{
         width: 205px;
         padding: 3px;
@@ -374,9 +386,7 @@ header li{
     .grid-picture img{
         width: 205px;
     }
-    .nav-links{
-        width:45%;
-    }
+
      .modal-content {
         max-width: 800px;
     }
@@ -406,31 +416,23 @@ header li{
     .modal-content {
         max-width: 600px;
     }
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-ul.show{
+        display: flex;
+
+    }
+    .hamburger{
+        display: block;
+    }
 }
 
 @media(max-width: 650px){
     body{
         overflow-x: hidden;
-    }
-    .nav-links{
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #0B090A;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        overflow-x: hidden;
-    }
-    .nav-links li{
-        opacity: 1;
-    }
-    .nav-burger{
-        display: block;
     }
     .grid-item img{
         width: 300px;
@@ -452,23 +454,10 @@ header li{
         padding-top: 30%;
     }
     .modal{
-        max-width: 63%;
+        max-width: 100%;
     }
-
-}
-
-.nav-active{
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
+    .logo{
+        letter-spacing: 2px;
     }
 }
 

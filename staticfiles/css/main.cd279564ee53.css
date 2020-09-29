@@ -1,0 +1,455 @@
+/* Global */
+body{
+    font-family: 'Poppins', sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#f4f4f4;
+}
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+/* -----------------------------------------Grid system for jelovnik---------------------------------------------- */
+.grid-container {
+    display: grid;
+    grid-template-columns: min(400px) min(400px) min(400px) min(400px);
+    padding: 10px;
+    justify-content: center;
+}
+.grid-item {
+    padding: 3px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #141414;
+    color: #f4f4f4 ;
+    border: solid #f4f4f4  3px;
+}
+
+.grid-item img{
+    width: 385px;
+}
+/* -----------------------------------------Grid system for Galerija---------------------------------------------- */
+
+.grid-picture img{
+    padding: 5px;
+    margin: 0;
+    width: 380px;
+}
+
+.mySlides img{
+    width:80%;
+}
+/* -----------------------------------------------Background image (index)------------------------------------- */
+#showcase{
+    min-height:1080px;
+    width: auto;
+    background: #141414 url("/static/images/sbnoc.a8bd6d6eef8b.jpg") no-repeat fixed center;
+    text-align:center;
+    color:#ffffff;
+}
+
+#showcase h5{
+    margin-top:100px;
+    font-size:55px;
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    background: rgba(30, 30, 30, 0.5);
+}
+
+#showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* --------------------------------------------------Boxes------------------------------------------------- */
+#boxes{
+    margin-top:20px;
+}
+
+#boxes .box{
+    float:left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+#boxes .box p{
+    background: #E0E0E1;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+/* --------------------------------------------------Footer------------------------------------------------- */
+footer{
+    padding:10px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:#141414;
+    text-align: center;
+    font-size: 12px;
+    color: #CBCBCD;
+}
+
+/* ---------------------------------------------Zoom for images------------------------------------------------- */
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+/* -----------------------------------------------Burgeri text------------------------------------------------- */
+.burger{
+    font-size: 40px;
+    color: #EBEBEB;
+    background: #141414;
+    text-align:center;
+}
+
+/* --------------------------------------------------Animated Arrow--------------------------------------------- */
+.arrow{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-bottom: 8px solid white;
+    border-right: 8px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+/* ---------------------------------------------------smooth scroll-------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------------------------------------------------Galerija----------------------------------------------- */
+.photo-container {
+    display: grid;
+    grid-template-columns: max(450px) max(450px) max(450px) max(450px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-item {
+    padding: 5px;
+    background-color: #141414;
+    border: solid white 1px;
+
+}
+
+.photo-item img{
+    width: 300px;
+}
+
+/* --------------------------------------------------Nav Bar------------------------------------------------- */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 75%;
+}
+
+.nav-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-ul a{
+    display: inline-block;
+    color: #EBEBEB;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:20px;
+}
+
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: #EBEBEB;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+header{
+    background-color: #0B090A;
+    border-bottom: white 1px solid;
+}
+
+.active a{
+    color: #9C9698;
+    font-weight: 900;
+}
+
+/* ---------------------------------------------------Logo Image------------------------------------------------- */
+#logoImg{
+    border-radius: 40px;
+    width: 180px;
+    float:left;
+    padding-top: 6px;
+}
+
+.logo{
+    color:#EBEBEB;
+    letter-spacing: 5px;
+}
+
+/*------------------------------ Galerija: modal logic for pictures ---------------------------------------*/
+/* The Close Button */
+.close {
+    color: #9da1a8;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 50px;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    background-color: rgba(2, 2, 2, 0.2);
+    font-weight: bold;
+    font-size: 35px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #141414;
+}
+
+/* Modal Content */
+.modal-content {
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    max-width: 1200px;
+}
+
+.row > .column {
+    padding: 0 5px;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --------------------------------------------Media Queries----------------------------------------------- */
+@media(max-width: 1600px){
+    .grid-item img{
+        width: 300px;
+        padding: 3px;
+    }
+    .grid-container{
+        grid-template-columns: min(315px) min(315px) min(315px) min(315px);
+        padding: 5px;
+    }
+     .grid-picture img{
+        width: 300px;
+    }
+    .modal-content {
+        max-width: 1000px;
+    }
+}
+
+@media(max-width: 1200px){
+    .grid-item img{
+        width: 205px;
+        padding: 3px;
+    }
+    .grid-container{
+        grid-template-columns: min(220px) min(220px) min(220px) min(220px);
+        padding: 5px;
+    }
+    .grid-picture img{
+        width: 205px;
+    }
+
+     .modal-content {
+        max-width: 800px;
+    }
+}
+
+@media(max-width: 900px){
+    #boxes .box{
+        float:none;
+        text-align:center;
+        width:100%;
+    }
+    #showcase h5{
+        margin-left:10%;
+        margin-right:10%;
+    }
+    .grid-item img{
+        width: 150px;
+        padding: 3px;
+    }
+    .grid-container{
+        grid-template-columns: min(165px) min(165px) min(165px) min(165px);
+        padding: 5px;
+    }
+     .grid-picture img{
+        width: 150px;
+    }
+    .modal-content {
+        max-width: 600px;
+    }
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-ul.show{
+        display: flex;
+
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+@media(max-width: 650px){
+    body{
+        overflow-x: hidden;
+    }
+    .grid-item img{
+        width: 300px;
+        padding: 3px;
+    }
+    .grid-container{
+        grid-template-columns: min(315px) min(315px) min(315px) min(315px);
+        padding: 5px;
+        display: block;
+    }
+    .grid-picture img{
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .modal-content {
+        max-width: 100%;
+        padding-top: 30%;
+    }
+    .modal{
+        max-width: 63%;
+    }
+    .logo{
+        letter-spacing: 2px;
+    }
+}
+
