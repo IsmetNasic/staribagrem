@@ -21,16 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c118cc13-63a8-4f68-a77c-690d285f0312" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/main.css.gz" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/main.css.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/js/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/js/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/js/navbar.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/js/navbar.js.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/staticfiles.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/templates/store/galerija.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/galerija.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/templates/store/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/templates/store/jelovnik.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/jelovnik.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
