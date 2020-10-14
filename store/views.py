@@ -1,10 +1,4 @@
-from django.shortcuts import render, redirect
-from django.http import JsonResponse
-import json
-import datetime
-from .models import *
-
-
+from django.shortcuts import render
 
 def index(request):
     return render(request, 'store/index.html')
