@@ -1,5 +1,0 @@
-background:  #f4f4f4 (dirty white)
-
-grid item:  #141414 (light black)
-
-nav-bar:  #0B090A (darker black)
